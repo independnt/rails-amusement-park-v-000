@@ -1,0 +1,13 @@
+<h1> Welcome <%=@user.name%></h1>
+<%if @user.admin%>
+  <h2>"ADMIN"<h2>
+<%end%>
+
+<h3>Mood: <%=@user.mood%></h3>
+<h3>Tickets: <%=@user.tickets%></h3>
+<h3>Height: <%=@user.height%> in'</h3>
+<br>
+<%= link_to "See attractions", attractions_path %>
+<br>
+
+<%= link_to "Log Out", "/signout" %>

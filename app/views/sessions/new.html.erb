@@ -1,0 +1,14 @@
+<center><h1> Sign into the Carnival </h1></center>
+
+
+<div class="center-div">
+<%=form_for @user, url: sessions_create_path do |f|%>
+<%=f.label :name %>
+<%=f.text_field :name%>
+<br>
+<%=f.label :password %>
+<%=f.password_field :password %>
+<br>
+<%=f.submit "Sign In"%>
+<% end %>
+</div>

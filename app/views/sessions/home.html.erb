@@ -1,0 +1,15 @@
+<center><h1>Welcome to the Circus of Value!</h1></center>
+
+<div>
+<center><%=image_tag("circus.jpg", alt: "a carnival", width: "600px")%></center>
+</div>
+<br>
+
+<div class="dropdown center-div">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose one!
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><%=link_to "Sign Up", new_user_path%></li>
+      <li><%=link_to "Sign In", signin_path%></li>
+    </ul>
+</div>

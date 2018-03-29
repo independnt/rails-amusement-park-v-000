@@ -20,6 +20,9 @@
             <span class="icon-bar"></span>
           </button>
         <a class="navbar-brand" href="<%= root_url %>"/>Home</a>
+        <%if logged_in?%>
+          <a class="navbar-brand" href="/signout"/>Signout</a>
+        <% end %>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -31,6 +34,7 @@
 
     <!-- content -->
     <div class="container"  role="main">
+      <p id="notice"><%= notice %></p>
       <%= yield %>
     </div>
 
